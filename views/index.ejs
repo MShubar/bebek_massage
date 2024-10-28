@@ -1,0 +1,18 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bebek Massage</title>
+  </head>
+  <body>
+    <h1>Welcome to Bebek Massage</h1>
+    <form action="/book" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="date" name="date" required />
+      <input type="text" name="service" placeholder="Service" required />
+      <input type="text" name="contact" placeholder="Contact Info" required />
+      <button type="submit">Book Appointment</button>
+    </form>
+  </body>
+</html>

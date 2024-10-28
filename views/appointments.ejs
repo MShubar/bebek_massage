@@ -1,0 +1,19 @@
+<!-- views/appointments.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Appointments</title>
+  </head>
+  <body>
+    <h1>All Appointments</h1>
+    <ul>
+      <% bookings.forEach(booking => { %>
+      <li>
+        <%= booking.name %> - <%= booking.date %> - <%= booking.service %> - <%=
+        booking.contact %>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
